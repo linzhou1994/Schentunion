@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <Button
+            android:id="@+id/zx_xj"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="扫码获取"
+            android:textSize="20sp"
+            android:background="@drawable/button_bg_scan_top"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:alpha="0.5" />
+
+        <Button
+            android:id="@+id/zx_xc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="从相册获取"
+            android:textSize="20sp"
+            android:background="@drawable/button_bg_scan_bot"/>
+    </LinearLayout>
+
+</LinearLayout>

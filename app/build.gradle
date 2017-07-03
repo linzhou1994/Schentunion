@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.linzhou.schentunion"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 10
+        versionName "4.3.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    //FloatingActionButton
+    compile 'com.android.support:design:24.2.0'
+    testCompile 'junit:junit:4.12'
+    compile project(path: ':emoji')
+    //Picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/autobahn-0.5.0.jar')
+    //CircleImageView
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile files('libs/AndroidPicker-1.4.6.jar')
+    compile files('libs/BmobSMS_V1.2.2_20170303.jar')
+    compile 'com.github.d-max:spots-dialog:0.7@aar'
+    //NumberProgressBar
+    compile 'com.daimajia.numberprogressbar:library:1.2@aar'
+    compile 'com.kymjs.rxvolley:rxvolley:1.1.4'
+    compile project(path: ':libzxing')
+    compile files('libs/Msc.jar')
+    //Rxjava
+    compile 'io.reactivex:rxjava:1.1.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //二维码
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    //Andfix热更新
+    compile 'com.alipay.euler:andfix:0.3.1'
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.linzhou.schentunion">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- BmobSDK权限 -->
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许读取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 其他权限 短信 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 闪屏页 -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 设置页 -->
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/text_setting" />
+        <!-- 简历页 -->
+        <activity
+            android:name=".activity.ResumeActivity"
+            android:label="@string/text_resume"
+            android:windowSoftInputMode="stateHidden"/>
+        <!-- 主页 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 账号注册页 -->
+        <activity
+            android:name=".activity.RegisteredAvtivity"
+            android:label="@string/text_user_registered" />
+        <!-- 登录页 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- 岗位搜索页 -->
+        <activity
+            android:name=".activity.PostSearchAcitvity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- 企业搜索页 -->
+        <activity
+            android:name=".activity.EtpSearchAcitvity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- 聊天页 -->
+        <activity android:name=".activity.ChatActivity" />
+        <!-- 个人信息修改查看页 -->
+        <activity
+            android:name=".activity.UpdateStudentActivity"
+            android:label="@string/text_now_my"
+            android:windowSoftInputMode="stateHidden"/>
+        <!-- 岗位详情页 -->
+        <activity
+            android:name=".activity.PostDetailActivity"
+            android:label="@string/text_now_postdetai" />
+        <!-- 我投过的岗位页 -->
+        <activity
+            android:name=".activity.DelivertActivity"
+            android:label="@string/text_now_delivert" />
+
+        <!-- 服务 -->
+        <service android:name=".service.Myservice" />
+
+        <activity android:name=".activity.EtpDeliverActivity"
+            android:label="@string/text_etp_delivert"/>
+
+        <activity android:name=".activity.WebViewActivity"/>
+    </application>
+
+</manifest>

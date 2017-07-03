@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> <!--AutoFillEmailEditText-->
+    <declare-styleable name="AutoFillEmailEditText">
+        <attr name="AutoFillEmailEditText_domains" format="string" />
+        <attr name="AutoFillEmailEditText_default_drop_down_key_color" format="color" />
+        <attr name="AutoFillEmailEditText_default_drop_down_bg" format="reference" />
+        <attr name="AutoFillEmailEditText_default_drop_down_divider" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="contentTextSize" format="dimension"/>
+        <attr name="contentTextColor" format="color"/>
+        <attr name="contentLineSpacingMultiplier" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="expandText" format="string"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="collapseText" format="string"/>
+        <attr name="expandCollapseTextColor" format="color"/>
+        <attr name="DrawableAndTextGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="KMPAutoComplTextView">
+        <attr name="completionHighlightColor" format="reference|color" />
+        <attr name="completionTextColor" format="reference|color" />
+        <attr name="completionTextSize" format="dimension" />
+        <attr name="completionIgnoreCase" format="boolean" />
+    </declare-styleable>
+</resources>

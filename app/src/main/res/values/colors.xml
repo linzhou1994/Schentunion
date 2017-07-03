@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009ad6</color>
+    <color name="main">#f5f5f9</color>
+    <color name="colorPrimaryDark">#009ad6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="blue">#009ad6</color>
+    <color name="red">#FF0000</color>
+    <color name="Grey">#BEBEBE</color>
+    <color name="Grey2">#505050</color>
+    <color name="color_my_text">#000000</color>
+
+    <color name="color_text_wage"> #ED5565</color>
+    <color name="color_text_name"> #4FC1E9</color>
+    <color name="color_text_workdetail">#3bbae7</color>
+    <color name="color_list_bg">#0c009ad6</color>
+
+
+    <color name="color_search_bc">#00b3fa</color>
+
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+
+</resources>
